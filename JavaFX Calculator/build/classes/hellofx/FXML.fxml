@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="813.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.FXMLController">
+   <children>
+      <Pane fx:id="displayPane" opacity="0.72" prefHeight="128.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="firstNo" layoutX="17.0" layoutY="10.0" prefHeight="108.0" prefWidth="127.0" style="-fx-font-size: 40;" />
+            <Label fx:id="symbol" layoutX="165.0" layoutY="10.0" prefHeight="108.0" prefWidth="55.0" style="-fx-font-size: 40;" />
+            <Label fx:id="secondNo" layoutX="237.0" layoutY="10.0" prefHeight="108.0" prefWidth="127.0" style="-fx-font-size: 40;" />
+            <Label fx:id="results" layoutX="448.0" layoutY="10.0" prefHeight="108.0" prefWidth="138.0" style="-fx-font-size: 40;" textAlignment="RIGHT" />
+            <Label fx:id="eq" layoutX="379.0" layoutY="10.0" prefHeight="108.0" prefWidth="55.0" style="-fx-font-size: 40;" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Button fx:id="one" layoutX="60.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonOne" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="1" />
+      <Button fx:id="two" layoutX="160.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonTwo" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="2" />
+      <Button fx:id="three" layoutX="260.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonThree" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="3" />
+      <Button fx:id="four" layoutX="60.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonFour" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="4" />
+      <Button fx:id="five" layoutX="160.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonFive" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="5" />
+      <Button fx:id="six" layoutX="260.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonSix" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="6" />
+      <Button fx:id="seven" layoutX="60.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleButtonSeven" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="7" />
+      <Button fx:id="eight" layoutX="160.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleButtonEight" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="8" />
+      <Button fx:id="nine" layoutX="260.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleButtonNine" prefHeight="76.0" prefWidth="82.0" style="-fx-font-size: 30;" text="9" />
+      <Button fx:id="zero" layoutX="60.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButtonZero" prefHeight="76.0" prefWidth="284.0" style="-fx-font-size: 30;" text="0" />
+      <Button fx:id="plus" layoutX="364.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonPlus" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="+" />
+      <Button fx:id="minus" layoutX="364.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonMinus" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="-" />
+      <Button fx:id="times" layoutX="364.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleButtonTimes" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="*" />
+      <Button fx:id="divide" layoutX="364.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButtonDivide" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="/" />
+      <Button fx:id="equals" layoutX="60.0" layoutY="674.0" mnemonicParsing="false" onAction="#equals" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="=" />
+      <Button fx:id="reset" layoutX="364.0" layoutY="674.0" mnemonicParsing="false" onAction="#reset" prefHeight="76.0" prefWidth="165.0" style="-fx-font-size: 30;" text="RESET" />
+      <Label fx:id="fail" layoutX="11.0" layoutY="134.0" prefHeight="108.0" prefWidth="579.0" wrapText="true">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
